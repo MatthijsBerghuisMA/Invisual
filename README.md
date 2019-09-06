@@ -1,2 +1,3 @@
 # Invisual
-Iemand schrijf hier iets aub in over het bedrijf... dank u
+Iemand schrijf hier iets aub in over het bedrijf... 
+dank u
