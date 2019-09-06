@@ -1,2 +1,2 @@
 # Invisual
-We are very intelligent yes
+Iemand schrijf hier iets aub in over het bedrijf... dank u
