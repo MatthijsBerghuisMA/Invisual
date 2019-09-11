@@ -10,4 +10,7 @@ require "../private/controllers/MainController.php";
 
 $controller = new MainController;
 
+// $GLOBALS['uri'] = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
+$GLOBALS['public_request'] = 'public/';
+
 $controller->load_page($routes);

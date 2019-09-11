@@ -15,6 +15,8 @@ class MainController {
         $allowed_file_requests = array();
         foreach(scandir($template_folder) as $file) if (!in_array($file, ['.', '..'])) array_push($allowed_file_requests, explode(".php", $file)[0]);
 
+        $uri = $GLOBALS['public_request'];
+
         include $template_folder . "header.php";
 
         include $template_folder . "footer.php";
