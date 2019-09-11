@@ -17,8 +17,6 @@ class router {
         // Get the url minus the base url
         $uri = substr($_SERVER['REQUEST_URI'], strlen($basepath));
 
-        $uri = explode("prototype/", $_SERVER['REQUEST_URI'])[1];
-
         // Remove the '?' from the url
         if (strstr($uri, '?')) $uri = substr($uri, 0, strpos($uri, '?'));
 
@@ -39,7 +37,7 @@ class router {
                 array_push($routes, $route);
         }
 
-        if (!count($routes)) array_push($routes, 'home');
+        if (!count($routes)) array_push($routes, 'intro');
 
         return $routes; // Return routes
     }
