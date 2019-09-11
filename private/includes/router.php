@@ -37,7 +37,7 @@ class router {
                 array_push($routes, $route);
         }
 
-        if (!count($routes)) array_push($routes, 'intro');
+        if (!count($routes)) array_push($routes, 'home');
 
         return $routes; // Return routes
     }
