@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  Options -MultiViews
+
+  # Skip existent files
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule public/index.php - [QSA,L,C]
+  RewriteRule .* - [QSA,L]
+
+  # Deny access php files
+  RewriteCond %{REQUEST_URI} ^.*\.php$
+  RewriteRule ^.*\.php$ - [R=404,L]
+
+  # Deny access html files
+  RewriteCond %{REQUEST_URI} ^.*\.php$
+  RewriteRule ^.*\.php$ - [R=404,L]
+
+  # Redirect root access (/) to public/index.php
+  RewriteCond %{REQUEST_URI} ^/$　
+  RewriteRule ^$ public/index.php [QSA,L]
+
+  # Redirect 404 for non existent files
+  RewriteCond %{REQUEST_URI} ^(.*)\..*$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)\..*$ - [R=404,L]
+
+  # No, so we redirect to our front web controller
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ public/index.php [QSA,L]
+
+  ErrorDocument 404 public/index.php
+</IfModule>
