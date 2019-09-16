@@ -13,13 +13,19 @@ class MainController {
         $template_folder = "../private/templates/";
 
         $allowed_file_requests = array();
-        foreach(scandir($template_folder) as $file) if (!in_array($file, ['.', '..'])) array_push($allowed_file_requests, explode(".php", $file)[0]);
+        foreach(scandir($template_folder) as $file) if (!in_array($file, ['.', '..', 'header.php', 'footer.php'])) array_push($allowed_file_requests, explode(".php", $file)[0]);
 
         $uri = $GLOBALS['public_request'];
 
-        include $template_folder . "header.php";
+        $requested_main_file = 'page404.php';
 
-        include $template_folder . "footer.php";
+        if (in_array($main_route, $allowed_file_requests)) $requested_main_file = $main_route . '.php';
+
+        require_once $template_folder . "header.php";
+
+        require $template_folder . $requested_main_file;
+
+        require_once $template_folder . "footer.php";
 
     }
 

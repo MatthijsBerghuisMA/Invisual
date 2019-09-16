@@ -15,7 +15,9 @@ class router {
         $basepath = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
 
         // Get the url minus the base url
-        $uri = substr($_SERVER['REQUEST_URI'], strlen($basepath));
+        // $uri = substr($_SERVER['REQUEST_URI'], strlen($basepath));
+
+        $uri = substr($_SERVER['REQUEST_URI'], 10); // Adjust INT number if routing is not working correctly
 
         // Remove the '?' from the url
         if (strstr($uri, '?')) $uri = substr($uri, 0, strpos($uri, '?'));
@@ -32,10 +34,9 @@ class router {
         // create array for only routes
         $routes = array();
 
-        foreach($uri_routes as $route) {
+        foreach($uri_routes as $route)
             if(trim($route))
                 array_push($routes, $route);
-        }
 
         if (!count($routes)) array_push($routes, 'home');
 
