@@ -38,7 +38,7 @@ nav {
     justify-content: space-between;
     height: 130px;
     position: absolute;
-    background-color: #fafafaf5;
+    background-color: white;
 }
 
 a {
@@ -46,16 +46,10 @@ a {
     color: #000;
 }
 
-a:hover {
-    color: red;
-}
-
-.active {
-    color: red;
-}
 
 .logo {
-    font-size: 3em;
+    width: 200px;
+    height: auto;
 }
 
 .nav_links,
@@ -66,7 +60,7 @@ a:hover {
 .nav_rechts a {
     font-size: 1em;
     padding: 10px 20px;
-    font-weight: 600;
+    font-weight: 200;
     letter-spacing: 1px;
 }
 
@@ -142,10 +136,10 @@ a:hover {
     transform: scale(0, 1);
     width: 100%;
     height: 5px;
-    background: rgb(0, 0, 0);
+    background: rgba(27, 252, 200, 1);
     transition: transform 200ms ease;
     left: 0;
-    top: 75px;
+    top: 50px;
 }
 
 .nav-link:hover::after {
@@ -168,7 +162,7 @@ a:hover {
     transform: translateY(-15px) rotate(45deg);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
     .nav_rechts1 {
         display: unset;
@@ -192,6 +186,20 @@ a:hover {
         font-size: 1em;
         padding: 10px 5px;
     }
+
+    .nav-link::after {
+        top: 75px;
+    }
 }
 
+@media screen and (max-width: 1300px) {
+
+    nav {
+        padding: 0px 50px;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+}
 /* Nav End */

@@ -12,14 +12,14 @@
 <body>
     <nav>
         <div class="nav_links template__nav-item">
-            <span class="logo">InVisual</span>
+           <img class="logo" src="<?=$uri?>img/logo.png" alt="logo">
         </div>
 
         <div class="nav_rechts template__nav-item ">
-            <a href="#about">OVER ONS</a>
-            <a href="#projects">PROJECTEN</a>
-            <a href="#shop">SHOP</a>
-            <a href="#contact">CONTACT</a>
+            <a class="nav-link" href="<?=$uri?>/about">OVER ONS</a>
+            <a class="nav-link" href="<?=$uri?>/projects">PROJECTEN</a>
+            <a class="nav-link" href="<?=$uri?>/shop">SHOP</a>
+            <a class="nav-link" href="<?=$uri?>/contact">CONTACT</a>
         </div>
 
         <div class="nav_rechts1">
@@ -30,10 +30,10 @@
                 <span class="nav-toggle-label-span-3"></span>
             </label>
             <div class="nav-links-container">
-                <a class="nav-link" href="#about">OVER ONS</a>
-                <a class="nav-link" href="#projects">PROJECTEN</a>
-                <a class="nav-link" href="#shop">SHOP</a>
-                <a class="nav-link" href="#contact">CONTACT</a>
+                <a class="nav-link" href="<?=$uri?>/about">OVER ONS</a>
+                <a class="nav-link" href="<?=$uri?>/projects">PROJECTEN</a>
+                <a class="nav-link" href="<?=$uri?>/shop">SHOP</a>
+                <a class="nav-link" href="<?=$uri?>/contact">CONTACT</a>
             </div>
         </div>
     </nav>
