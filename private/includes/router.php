@@ -17,7 +17,10 @@ class router {
         // Get the url minus the base url
         // $uri = substr($_SERVER['REQUEST_URI'], strlen($basepath));
 
-        $uri = substr($_SERVER['REQUEST_URI'], 10); // Adjust INT number if routing is not working correctly
+        
+
+        $uri = str_replace("/GitHub/Invisual/", "", $_SERVER['REQUEST_URI']); // Mac localhost
+        // $uri = substr($_SERVER['REQUEST_URI'], 10); // Windows localhost
 
         // Remove the '?' from the url
         if (strstr($uri, '?')) $uri = substr($uri, 0, strpos($uri, '?'));

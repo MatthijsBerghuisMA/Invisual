@@ -15,7 +15,8 @@ class MainController {
         $allowed_file_requests = array();
         foreach(scandir($template_folder) as $file) if (!in_array($file, ['.', '..', 'header.php', 'footer.php'])) array_push($allowed_file_requests, explode(".php", $file)[0]);
 
-        $uri = $GLOBALS['public_request'];
+        $file_uri = $GLOBALS['file_request'];
+        $nav_uri = $GLOBALS['nav_request'];
 
         $requested_main_file = 'page404.php';
 
