@@ -2,17 +2,20 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?=$file_uri?>css/style.css">
     <title>InVisual<?php if ($main_route != "home") echo " | " . $main_route;?></title>
 </head>
-
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    </style>
 <body>
     <nav>
         <div class="nav_links template__nav-item">
-           <img class="logo" src="<?=$file_uri?>img/logo.png" alt="logo">
+           <a href="/"><img class="logo" src="<?=$file_uri?>img/logo.png" alt="logo"></a>
         </div>
 
         <div class="nav_rechts template__nav-item ">
