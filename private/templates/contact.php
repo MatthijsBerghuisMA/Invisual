@@ -3,12 +3,12 @@
         <form action="private/includes/contact.php" method="post">
             <div class="input-container">
                 <input type="text" id="naam" name="naam" class="input" required>
-                <label class="input_label" for="naam">Name *</label>
+                <label class="input_label" for="naam">Naam *</label>
                 <div class="input_underline"></div>
             </div>
             <div class="input-container">
                 <input type="text" name="subject" id="subject" class="input" required>
-                <label class="input_label" for="subject">Subject</label>
+                <label class="input_label" for="subject">Onderwerp</label>
                 <div class="input_underline"></div>
             </div>
             <div class="input-container">
@@ -18,10 +18,10 @@
             </div>
             <div class="input-container msg-container">
                 <textarea class="input" name="message" id="bericht" required></textarea>
-                <label for="bericht" class="input_label">Message *</label>
+                <label for="bericht" class="input_label">Bericht *</label>
                 <div class="input_underline"></div>
             </div>
-            <input type="submit" name="submit" class="button " value="SEND">
+            <input type="submit" name="submit" class="button " value="VERSTUURs">
         </form>
     </div>
 </div>

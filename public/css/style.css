@@ -248,6 +248,13 @@ a {
     line-height: 3;
 }
 
+@media screen and (max-width: 800px) {
+    
+    .container {
+        width: 100%;
+        margin: 0px;
+    }
+}
 
 /* Content End */
 
@@ -347,5 +354,49 @@ a {
     transform: scale(1);
 }
 
+
+@media screen and (max-width: 800px) {
+
+    .contact {
+        height: 100%;
+    }
+
+    .input {
+        font-size: 15px;
+    }
+
+    .input-label {
+        font-size: 20px;
+    }
+
+    .input_label {
+        font-size: 15px;
+    }
+
+    .button {
+        margin-bottom: 70px;
+    }
+
+    .input:focus~label {
+        font-size: 15px;
+        transform: translate(-5px, -30px);
+    }
+
+    .has-value~label {
+        font-size: 15px;
+        transform: translate(-5px, -30px);
+    }
+
+    .input-container {
+        width: 200px;
+        height: 35px;
+        border-bottom: 1px solid #000;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 75px;
+    }
+
+}
 /* Contact End */
 
