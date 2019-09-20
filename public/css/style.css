@@ -249,7 +249,7 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-    
+
     .container {
         width: 100%;
         margin: 0px;
@@ -284,7 +284,7 @@ a {
 }
 
 .button:hover {
-    background-color: black;
+    background-color: #23387c;
     color: white;
 }
 
@@ -297,7 +297,7 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 30px;
+    margin: 40px;
 }
 
 .msg-container {
@@ -320,7 +320,7 @@ a {
     position: absolute;
     left: 5px;
     font-size: 18px;
-    color: #000;
+    color: #23387c;
     transition: transform 200ms ease, font-size 200ms ease, color 200ms ease;
     pointer-events: none;
 }
