@@ -399,4 +399,37 @@ a {
 
 }
 /* Contact End */
+/* Project page */
+.projectainer{
+      width: 100%;
+}
+
+  .pro {
+    display: grid;
+    color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px 0px;
+  }
+  #projects h2, #projects p{
+      text-align: center;
+  }
+  .box img{
+    width: 100%;
+  }
+  .box h4{
+      margin: 20px;
+      font-size: 1.5em;
+  }
+  .box {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    background: #f2f2f28f;
+    padding: 1em 1em;
+    text-align: center;
+  }
+  #projects{
+      padding-bottom: 5em;
+  }
+/* Project End */
 
