@@ -32,7 +32,7 @@ html {
 /* Nav Beginning */
 
 nav {
-    padding: 0 125px;
+    padding: 0 75px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -212,40 +212,37 @@ a {
 .container {
     width: 91%;
     margin: 0px 75px;
-    text-align: center;
 }
 
 .test {
-    width: 100%;
+    width: auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
-.header-head {
-    margin-top: 100px;
-}
-
-.header-head span {
+.slogan {
+    color: white;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
-.header {
+.headsl {
+    padding-top: 300px;
+    font-size: 3em;
+    color: white;
     font-weight: 900;
-    font-size: 1.5em;
 }
 
-.quotes {
-    font-style: italic;
-    margin-top: 15px;
-    font-weight: 100;
-}
-
-.header-text {
-    margin-top: 50px;
-    font-size: 0.7em;
-    font-weight: 100;
-    display: flex;
-    flex-direction: column;
-    line-height: 3;
+.subslogen {
+    color: white;
+    padding-top: 100px;
 }
 
 @media screen and (max-width: 800px) {
@@ -258,6 +255,52 @@ a {
 
 /* Content End */
 
+/* Logo? Start */
+
+.logoN {
+    display: flex;
+    flex-direction: column;
+    color: #23387c;
+    margin-top: 100px;
+}
+
+.logoN span {
+    font-size: 2em;
+}
+
+.logoN img {
+    width: 80%;
+}
+
+.button-buy {
+    padding: 7px 30px;
+    background-color: white;
+    border-radius: 4px;
+    width: 100px;
+    font-weight: bolder;
+    font-size: 0.5em;
+    transition: 0.5s;
+    -webkit-appearance: none;
+}
+
+.button-buy:hover {
+    background-color: #23387c;
+    color: white;
+}
+/* Logo? End */
+
+/* Website start */
+
+.websiteNodig {
+    display: flex;
+    flex-direction: column;
+}
+
+.websiteNodig img {
+    width: 80%;
+}
+
+/* Website end */
 
 /* Contact Start */
 
