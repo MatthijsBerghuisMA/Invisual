@@ -1,12 +1,32 @@
+<!-- Made by Matthijs -->
 <div class="container">
-    <img class="test" src="<?= $file_uri ?>img/header2.png" alt="huts">
-    <div class="header-head">
-        <span class="header">Van branding tot uiting!</span>
-        <span class="quotes">"Give your buisness the boost"</span>
+
+    <div class="banner">
+        <?= var_dump($file_uri) ?>
+        <div class="test"></div>
+        <!-- <img class="test" src="<?= $file_uri ?>img/banner.jpg" alt="banner1"> -->
+        <div class="slogan">
+            <span class="headsl">WIJ VISUASEREN JOUW VISIE!</span>
+            <span class="subslogen">Opzoek naar een passende huisstijl voor jouw bedrijf? <br>
+                Dan ben je bij ons aan het juiste adres! <br>
+                Wij helpen jou graag aan je nieuwe huisstijl.
+            </span>
+        </div>
     </div>
-    <div class="header-text">
-        <span>Wij zijn invisual design, een jong, enthousiaste team dat net zover gaat tot dat jij helemaal tevreden bent.</span>
-        <span>We maken een branding waarmee je je kan onderschijden in de markt, vanuit jouw branding maken we media uitingen.</span>
-        <span>En we geven je een extra boost door jouw website op maat de maken, of kies een van onze geweldige templates.</span>
+
+    <div class="logoN">
+        <span>LOGO NODIG?</span>
+        <span>Wij denken graag met jouw mee</span>
+        <img src="<?= $file_uri ?>img/foto.png" alt="test">
+        <a class="button-buy" href="#">DIT WIL IK</a>
     </div>
+
+    <div class="websiteNodig">
+        <span>Website Nodig?</span>
+        <span>Wij zijn er voor jou</span>
+        <img src="<?= $file_uri ?>img/10.jpg" alt="test">
+        <a class="button-buy" href="#">DIT WIL IK</a>
+    </div>
+
+
 </div>
