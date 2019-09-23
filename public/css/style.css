@@ -129,7 +129,7 @@ a {
     padding: 29px;
     position: relative;
     font-weight: 300;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-decoration: none;
 }
 
@@ -181,7 +181,7 @@ a {
     }
 
     nav {
-        padding: 0 10px;
+        padding: 0 25px;
         margin-top: 0px;
     }
 
@@ -217,9 +217,12 @@ a {
 .test {
     width: auto;
     height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     position: absolute;
     left: 0;
     top: 0;
@@ -242,14 +245,21 @@ a {
 
 .subslogen {
     color: white;
+    line-height: 30px;
     padding-top: 100px;
 }
 
 @media screen and (max-width: 800px) {
 
     .container {
-        width: 100%;
-        margin: 0px;
+        margin: 0px 30px;
+    }
+
+    .subslogen {
+        width: 87%;
+        font-size: 1.5em;
+        line-height: 35px;
+        font-weight: 900;
     }
 }
 
@@ -260,32 +270,47 @@ a {
 .logoN {
     display: flex;
     flex-direction: column;
-    color: #23387c;
+    color: #000;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.logoN span {
+.logoN span, .websiteNodig span {
     font-size: 2em;
 }
 
 .logoN img {
     width: 80%;
+    margin-bottom: 50px;
+
 }
 
 .button-buy {
     padding: 7px 30px;
-    background-color: white;
+    background-color: #23387c;
     border-radius: 4px;
-    width: 100px;
+    text-align: center;
+    color: white;
+    width: 200px;
     font-weight: bolder;
-    font-size: 0.5em;
+    font-size: 0.8em;
     transition: 0.5s;
     -webkit-appearance: none;
+    border: 1px solid;
+}
+
+.logoN a, .websiteNodig a {
+    align-self: center;
 }
 
 .button-buy:hover {
-    background-color: #23387c;
-    color: white;
+    background-color: #48A9CA;
+}
+
+@media screen and (max-width: 800px) {
+    .logoN span ,.websiteNodig span {
+        margin: 10px 20px;
+    }
 }
 /* Logo? End */
 
@@ -330,6 +355,16 @@ a {
     background-color: #23387c;
     color: white;
 }
+
+
+@media screen and (max-width: 800px) { 
+
+    .button-buy {
+        margin-top: 50px;
+    }
+
+}
+
 
 /* Input start */
 
@@ -442,9 +477,10 @@ a {
 
 }
 /* Contact End */
+
 /* Project page */
-.projectainer{
-      width: 100%;
+.projectainer {
+    width: 100%;
 }
 
   .pro {
@@ -453,16 +489,20 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 70px 0px;
   }
-  #projects h2, #projects p{
+
+  #projects h2, #projects p {
       text-align: center;
   }
-  .box img{
+
+  .box img {
     width: 100%;
   }
-  .box h4{
+
+  .box h4 {
       margin: 20px;
       font-size: 1.5em;
   }
+
   .box {
     width: 70%;
     margin: 0 auto;
@@ -471,6 +511,7 @@ a {
     padding: 1em 1em;
     text-align: center;
   }
+
   #projects{
       padding-bottom: 5em;
   }
