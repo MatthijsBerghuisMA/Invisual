@@ -1,0 +1,59 @@
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+html, body {
+    height: 93%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #eeeeee;
+    font-family: lato;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login--form {
+    background: #fff;
+    width: 300px;
+    text-align: center;
+    padding: 50px 40px;
+    box-shadow: 0 2px 3px #8e8e8e8f;
+}
+
+.login__passw {
+    background: #fff;
+    border: solid 1px #bbccff;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.login__submit {
+    text-transform: capitalize;
+    border: none;
+    background: #6188ff;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 10px;
+    font-size: 1.1em;
+
+}
+
+.gifs {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    max-width: 500px;
+}
+
+.gifs__img {
+    margin: 5px;
+    box-shadow: 0 2px 3px #8e8e8e8f;
+    max-width: 150px;
+}

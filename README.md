@@ -1,8 +1,4 @@
 # Invisual
-##### Online version
-
-Deze branch is voor alleen voor Wieb uwu. Als je iets wilt committen, commit naar de 'master' branch.
-- Wieb uwu
-
-
-http://invisualdesign.nl/
+ジャズをお願いします
+Iemand schrijf hier iets aub in over het bedrijf... 
+dank u

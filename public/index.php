@@ -1,5 +1,9 @@
 <?php
 
+$debug = true;
+
+if ($debug) session_start();
+
 // -------------------------------------------------------------------------------
 
 function getUserIpAddr () {
@@ -46,15 +50,24 @@ file_put_contents($json_file, json_encode($obj));
 
 // ---------------------------------------------------------------------------------
 
+if ($debug && isset($_SESSION['debug-ssid'])) {
+    if ($_SESSION['debug-ssid'] === 'ebb3b395-c8bf-41a9-bcac-7aed5017f5c8');
+    $controller = "MainController";
+} elseif ($debug) {
+    $controller = "DebugController";
+} else {
+    $controller = "MainController";
+}
+
 require "../private/includes/router.php";
 
 $router = new router;
 
 $routes = $router->get_routes();
 
-require "../private/controllers/MainController.php";
+require "../private/controllers/" . $controller . ".php";
 
-$controller = new MainController;
+$controller = new $controller;
 
 // $GLOBALS['uri'] = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
 $GLOBALS['file_request'] = 'public/';

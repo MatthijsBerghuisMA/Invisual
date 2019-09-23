@@ -13,7 +13,7 @@ class MainController {
         $template_folder = "../private/templates/";
 
         $allowed_file_requests = array();
-        foreach(scandir($template_folder) as $file) if (!in_array($file, ['.', '..', 'header.php', 'footer.php'])) array_push($allowed_file_requests, explode(".php", $file)[0]);
+        foreach(scandir($template_folder) as $file) if (!in_array($file, ['.', '..', 'debug.php', 'header.php', 'footer.php'])) array_push($allowed_file_requests, explode(".php", $file)[0]);
 
         $file_uri = $GLOBALS['file_request'];
         $nav_uri = $GLOBALS['nav_request'];
