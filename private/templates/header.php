@@ -1,3 +1,5 @@
+<!-- Made by Matthijs -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?=$file_uri?>css/style.css">
-    <title>InVisual<?php if ($main_route != "home") echo " | " . $main_route;?></title>
+    <title>Invisual<?php if ($main_route != "home") echo " | " . $main_route;?></title>
 </head>
     <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
@@ -19,10 +21,10 @@
         </div>
 
         <div class="nav_rechts template__nav-item ">
-            <a class="nav-link" href="<?=$nav_uri?>about">OVER ONS</a>
-            <a class="nav-link" href="<?=$nav_uri?>projects">PROJECTEN</a>
-            <a class="nav-link" href="<?=$nav_uri?>shop">SHOP</a>
-            <a class="nav-link" href="<?=$nav_uri?>contact">CONTACT</a>
+            <a class="nav-link" href="<?=$nav_uri?>about">over ons</a>
+            <a class="nav-link" href="<?=$nav_uri?>projects">projecten</a>
+            <a class="nav-link" href="<?=$nav_uri?>shop">shop</a>
+            <a class="nav-link" href="<?=$nav_uri?>contact">contact</a>
         </div>
 
         <div class="nav_rechts1">
@@ -33,10 +35,10 @@
                 <span class="nav-toggle-label-span-3"></span>
             </label>
             <div class="nav-links-container">
-                <a class="nav-link" href="<?=$nav_uri?>about">OVER ONS</a>
-                <a class="nav-link" href="<?=$nav_uri?>projects">PROJECTEN</a>
-                <a class="nav-link" href="<?=$nav_uri?>shop">SHOP</a>
-                <a class="nav-link" href="<?=$nav_uri?>contact">CONTACT</a>
+            <a class="nav-link" href="<?=$nav_uri?>about">over ons</a>
+            <a class="nav-link" href="<?=$nav_uri?>projects">projecten</a>
+            <a class="nav-link" href="<?=$nav_uri?>shop">shop</a>
+            <a class="nav-link" href="<?=$nav_uri?>contact">contact</a>
             </div>
         </div>
     </nav>
