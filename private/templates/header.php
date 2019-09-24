@@ -23,7 +23,7 @@
         <div class="nav_rechts template__nav-item ">
             <a class="nav-link" href="<?=$nav_uri?>about">over ons</a>
             <a class="nav-link" href="<?=$nav_uri?>projects">projecten</a>
-            <a class="nav-link" href="<?=$nav_uri?>shop">shop</a>
+            <a class="nav-link" href="<?=$nav_uri?>shop">diensten</a>
             <a class="nav-link" href="<?=$nav_uri?>contact">contact</a>
         </div>
 
@@ -37,7 +37,7 @@
             <div class="nav-links-container">
             <a class="nav-link" href="<?=$nav_uri?>about">over ons</a>
             <a class="nav-link" href="<?=$nav_uri?>projects">projecten</a>
-            <a class="nav-link" href="<?=$nav_uri?>shop">shop</a>
+            <a class="nav-link" href="<?=$nav_uri?>shop">diensten</a>
             <a class="nav-link" href="<?=$nav_uri?>contact">contact</a>
             </div>
         </div>
