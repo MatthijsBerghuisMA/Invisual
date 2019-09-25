@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Monserrat-light";
+    src: url("../font/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Monserrat-regular";
+    src: url("../font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Monserrat-extrabold";
+    src: url("../font/Montserrat-ExtraBold.ttf");
+}
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -46,7 +60,6 @@ nav {
 
 a {
     text-decoration: none;
-    color: #000;
 }
 
 
@@ -62,9 +75,14 @@ a {
 
 .nav_rechts a {
     font-size: 1em;
+    color: #329ABF;
     padding: 10px 20px;
     font-weight: 200;
     letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: #000;
 }
 
 .nav_links a {
@@ -123,7 +141,7 @@ a {
 
 .nav-link {
     font-size: 30px;
-    color: #121212;
+    color: #329ABF;
     letter-spacing: 3px;
     margin: 8px 0;
     padding: 29px;
@@ -131,23 +149,9 @@ a {
     font-weight: 300;
     text-transform: lowercase;
     text-decoration: none;
+    transition: 0.8s;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    transform: scale(0, 1);
-    width: 100%;
-    height: 5px;
-    background: #23387c;
-    transition: transform 200ms ease;
-    left: 0;
-    top: 50px;
-}
-
-.nav-link:hover::after {
-    transform: scale(1, 1);
-}
 
 #nav-toggle:checked~.nav-links-container {
     transform: translateX(0);
@@ -219,9 +223,6 @@ a {
     height: 100vh;
     width: 100%;
     background-image: url(../img/banner.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -234,11 +235,12 @@ a {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: "Monserrat-extrabold";
 }
 
 .headsl {
-    padding-top: 300px;
-    font-size: 3em;
+    padding-top: 200px;
+    font-size: 80px;
     color: white;
     font-weight: 900;
 }
@@ -248,6 +250,7 @@ a {
     font-size: 1.7em;
     line-height: 50px;
     padding-top: 100px;
+    font-family: "Monserrat-regular";
 }
 
 @media screen and (max-width: 800px) {
@@ -289,7 +292,7 @@ a {
 
 .button-buy {
     padding: 7px 30px;
-    background-color: #23387c;
+    background-color: #329ABF;
     border-radius: 4px;
     text-align: center;
     color: white;
@@ -301,12 +304,16 @@ a {
     border: 1px solid;
 }
 
+.fontb {
+  font-family: "Monserrat-extrabold"; 
+}
+
 .logoN a, .websiteNodig a {
     align-self: center;
 }
 
 .button-buy:hover {
-    background-color: #48A9CA;
+    background-color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 800px) {
@@ -354,7 +361,7 @@ a {
 }
 
 .button:hover {
-    background-color: #23387c;
+    background-color: #329ABF;
     color: white;
 }
 
@@ -483,7 +490,7 @@ a {
 /* Diensten Start */
     .bannershop {
         height: 40vh;
-        background-image: url(../img/banner.jpg);
+        background-image: url(../img/banner1.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -509,10 +516,11 @@ a {
     }
 
     .shop-block {
+        padding: 50px 0px;
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 460px;
+        width: 300px;
         height: 500px;
         background-color: white;
         box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.10);
@@ -520,6 +528,17 @@ a {
         margin-top: 100px;
     }
 
+    .margspan {
+        margin-bottom: 33px;
+    }
+
+    .spanv {
+        margin-bottom: 9px;
+    }
+
+    .spanc {
+        margin-bottom: 9px;
+    }
     .shop-item {
         margin-top: 10px;
         font-size: 3em;
