@@ -9,11 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?=$file_uri?>css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet"> -->
     <title>Invisual<?php if ($main_route != "home") echo " | " . $main_route;?></title>
 </head>
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-    </style>
 <body>
     <nav>
         <div class="nav_links template__nav-item">
@@ -21,7 +19,7 @@
         </div>
 
         <div class="nav_rechts template__nav-item ">
-            <a class="nav-link" href="<?=$nav_uri?>about">over ons</a>
+            <a class="nav-link" href="/">home</a>
             <a class="nav-link" href="<?=$nav_uri?>projects">projecten</a>
             <a class="nav-link" href="<?=$nav_uri?>shop">diensten</a>
             <a class="nav-link" href="<?=$nav_uri?>contact">contact</a>
@@ -35,7 +33,7 @@
                 <span class="nav-toggle-label-span-3"></span>
             </label>
             <div class="nav-links-container">
-            <a class="nav-link" href="<?=$nav_uri?>about">over ons</a>
+            <a class="nav-link" href="/">home</a>
             <a class="nav-link" href="<?=$nav_uri?>projects">projecten</a>
             <a class="nav-link" href="<?=$nav_uri?>shop">diensten</a>
             <a class="nav-link" href="<?=$nav_uri?>contact">contact</a>
