@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?= $file_uri ?>css/style.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet"> -->
+  <link rel="shortcut icon" href="favicon.ico" type="<?= $file_uri ?>img/logo2.png">
     <title>Invisual<?php if ($main_route != "home") echo " | " . $main_route; ?></title>
 </head>
 
