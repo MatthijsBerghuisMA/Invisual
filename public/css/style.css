@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: "Monserrat-bold";
+    src: url("../font/Montserrat-Bold.ttf");
+}
+
+@font-face {
     font-family: "Monserrat-extrabold";
     src: url("../font/Montserrat-ExtraBold.ttf");
 }
@@ -18,7 +23,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #23387c;
     max-width: 100%;
 }
 
@@ -360,6 +364,7 @@ a {
 .websiteNodig {
     display: flex;
     flex-direction: column;
+    margin-bottom: 75px;
 }
 
 .websiteNodig img {
@@ -367,6 +372,56 @@ a {
 }
 
 /* Website end */
+
+/* Team Start */
+
+.meet {
+    text-align: center;
+    font-size: 2em;
+    margin: 50px auto;
+    font-family: "Monserrat-extrabold";
+}
+.team {
+    margin-top: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.naam {
+    font-family: "Monserrat-bold";
+}
+
+.functie {
+    font-family: "Monserrat-regular";
+}
+.team-blokken {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.person {
+    width: 225px;
+    height: 225px;
+}
+
+.teamblok {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.teamblok * {
+    margin: 5px 0px;
+}
+/* Team End */
 
 /* Contact Start */
 
