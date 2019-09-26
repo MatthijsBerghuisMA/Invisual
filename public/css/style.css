@@ -305,8 +305,7 @@ a {
     display: flex;
     flex-direction: column;
     color: #000;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin: 100px 0px;
 }
 
 .logoN span,
@@ -379,6 +378,7 @@ a {
     text-align: center;
     font-size: 2em;
     margin: 50px auto;
+    align-self: center;
     font-family: "Monserrat-extrabold";
 }
 .team {
@@ -421,6 +421,7 @@ a {
 .teamblok * {
     margin: 5px 0px;
 }
+
 /* Team End */
 
 /* Contact Start */
@@ -693,42 +694,158 @@ a {
 /* Diensten End */
 
 /* Project page */
-.projectainer {
+.bannerproj {
+    width: auto;
+    height: 100vh;
     width: 100%;
+    background-image: url(../img/11.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
-.pro {
-    display: grid;
-    color: black;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 70px 0px;
+.project {
+    padding-top: 200px;
+    height: 100vh;
 }
 
-#projects h2,
-#projects p {
-    text-align: center;
+.bannertxt {
+    height: 100vh;
 }
 
-.box img {
-    width: 100%;
+.bannertext {
+    font-size: 80px;
+    font-family: "Monserrat-extrabold";
+    color: #000;
 }
 
-.box h4 {
+.projecten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 100px;
+
+}
+
+.smallsquare {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.projectbig {
+    width: 450px;
+    height: 450px;
     margin: 20px;
-    font-size: 1.5em;
+    background-color: gray;
 }
 
-.box {
-    width: 70%;
-    margin: 0 auto;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-    background: #f2f2f28f;
-    padding: 1em 1em;
+.projectsmall {
+    margin: 25px;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+
+.projectsmall:hover {
+    opacity: 0.8;
+}
+
+.projectbig:hover {
+    opacity: 0.8;
+}
+
+.modaal a {
+    color: white;
+    font-size: 20px;
+}
+
+.close {
+    width: 2em;
+    justify-self: end;
+    font-size: 5em;
+    font-weight: 900;
+    transform: translateX(.5em);
+    border: 0;
+    background-color: transparent;
+}
+
+.close:hover {
+    color: rgb(255, 0, 0);
+} 
+.modaal-knop {
+    cursor: pointer;
+}
+
+.m-Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.84);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
-#projects {
-    padding-bottom: 5em;
+.modaal {
+    width: 70%;
+    display: grid;
+    animation: opkomen 0.2s forwards;
 }
 
+.modaal img {
+    width: 70%;
+    margin: 20px 0;
+}
+
+@keyframes opkomen {
+
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+@media screen and (max-width: 1300px) {
+    .projecten {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .projecten {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectbig, .projectsmall {
+        width: 300px;
+        height: 300px;
+        margin: 25px auto;
+    }
+
+     .modaal img {
+         width: 100%;
+     }
+
+    .modaal {
+        width: 100%;
+    }
+
+    .bannertext {
+        font-size: 60px;
+    }
+}
 /* Project End */

@@ -1,33 +1,87 @@
-<div class="projectainer">
-    <section id="projects">
-        <br>
-        <br>
-        <h2>Onze projecten</h2>
-        <br>
-        <div class="pro">
-            <div class="box">
-                <img src="<?= $file_uri ?>img/invisualbla.jpg">
-                <br>
-                <h4>Coming Soon</h4>
-                <br>
-            </div>
-            <div class="box">
-                <img src="<?= $file_uri ?>img/invisualbla.jpg">
-                <h4>Coming Soon</h4>
-
-            </div>
-            <div class="box">
-                <img src="<?= $file_uri ?>img/invisualbla.jpg">
-                <br>
-                <h4>Coming Soon</h4>
-            </div>
-            <div class="box">
-                <img src="<?= $file_uri ?>img/invisualbla.jpg">
-                <br>
-                <h4>Coming Soon</h4>
-            </div>
+<!-- Made by Matthijs -->
+<div class="bannerproj"></div>
+<div class="container">
+    <div class="project">
+        <div class="bannertxt">
+            <span class="bannertext">Bekijk <br> ons werk</span>
         </div>
-        <br>
-        <br>
-    </section>
+        <div class="projecten">
+            <div class="projectbig">
+            <img src="<?=$file_uri?>img/matt.png" class="ButtonM" alt="?">
+                <section class="album Content">
+                    <h1>projectname</h1>
+                    <img src="<?=$file_uri?>img/mattmodaal.png" alt="?">
+                    <article>
+                        <a href="http://matthijsberghuis.com">Link</a>
+                        <!-- desnoods een stukje text -->
+                    </article>
+                </section>
+            </div>
+
+            <div class="smallsquare">
+                <div class="projectsmall">
+                <img src="<?=$file_uri?>img/download.png" class="ButtonM" alt="?">
+                <section class="album Content">
+                    <h1>projectname</h1>
+                    <img src="<?=$file_uri?>img/11.jpg" alt="?">
+                    <article>
+                        <a href="http://">Link</a>
+                        <!-- desnoods een stukje text -->
+                    </article>
+                </section>
+                </div>
+                <div class="projectsmall">
+                <img src="<?=$file_uri?>img/download.png" class="ButtonM" alt="?">
+                <section class="album Content">
+                    <h1>projectname</h1>
+                    <img src="<?=$file_uri?>img/11.jpg" alt="?">
+                    <article>
+                        <a href="http://">Link</a>
+                        <!-- desnoods een stukje text -->
+                    </article>
+                </section>
+                </div>
+                <div class="projectsmall"><img src="<?=$file_uri?>img/download.png" class="ButtonM" alt="?">
+                <section class="album Content">
+                    <h1>projectname</h1>
+                    <img src="<?=$file_uri?>img/11.jpg" alt="?">
+                    <article>
+                        <a href="http://">Link</a>
+                        <!-- desnoods een stukje text -->
+                    </article>
+                </section></div>
+                <div class="projectsmall"><img src="<?=$file_uri?>img/download.png" class="ButtonM" alt="?">
+                <section class="album Content">
+                    <h1>projectname</h1>
+                    <img src="<?=$file_uri?>img/11.jpg" alt="?">
+                    <article>
+                        <a href="http://">Link</a>
+                        <!-- desnoods een stukje text -->
+                    </article>
+                </section></div>
+            </div>
+            <div class="smallsquare">
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+            </div>
+            <div class="projectbig"></div>
+            <div class="projectbig"></div>
+            <div class="smallsquare">
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+            </div>
+            <div class="smallsquare">
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+                <div class="projectsmall"></div>
+            </div>
+            <div class="projectbig"></div>
+        </div>
+    </div>
+
 </div>
