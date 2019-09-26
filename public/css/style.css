@@ -12,12 +12,14 @@
     font-family: "Monserrat-extrabold";
     src: url("../font/Montserrat-ExtraBold.ttf");
 }
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #23387c;
+    max-width: 100%;
 }
 
 button,
@@ -169,6 +171,18 @@ a {
     transform: translateY(-15px) rotate(45deg);
 }
 
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        padding: 0px 130px;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+}
+
 @media screen and (max-width: 900px) {
 
     .nav_rechts1 {
@@ -185,7 +199,7 @@ a {
     }
 
     nav {
-        padding: 0 25px;
+        padding: 0 30px;
         margin-top: 0px;
     }
 
@@ -199,16 +213,7 @@ a {
     }
 }
 
-@media screen and (max-width: 1300px) {
 
-    nav {
-        padding: 0px 50px;
-    }
-
-    .logo {
-        font-size: 2em;
-    }
-}
 /* Nav End */
 
 /* Content Start */
@@ -253,18 +258,39 @@ a {
     font-family: "Monserrat-regular";
 }
 
+@media screen and (max-width: 1300px) {
+
+    .container {
+        max-width: 1000px;
+    }
+
+}
+
 @media screen and (max-width: 800px) {
 
     .container {
         margin: 0px 30px;
     }
 
-    .subslogen {
-        width: 87%;
-        font-size: 1.5em;
-        line-height: 35px;
-        font-weight: 900;
+    .slogan {
+        height: 65vh;
     }
+
+    .test {
+        height: 65vh;
+    }
+
+    .subslogen {
+        font-size: 20px;
+        line-height: 26px;
+        padding-top: 50px;    
+    }
+
+    .headsl {
+        padding-top: 125px;
+        font-size: 40px;
+    }
+
 }
 
 /* Content End */
@@ -279,7 +305,8 @@ a {
     margin-bottom: 200px;
 }
 
-.logoN span, .websiteNodig span {
+.logoN span,
+.websiteNodig span {
     font-size: 2em;
     color: black;
 }
@@ -305,10 +332,11 @@ a {
 }
 
 .fontb {
-  font-family: "Monserrat-extrabold"; 
+    font-family: "Monserrat-extrabold";
 }
 
-.logoN a, .websiteNodig a {
+.logoN a,
+.websiteNodig a {
     align-self: center;
 }
 
@@ -317,10 +345,14 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-    .logoN span ,.websiteNodig span {
+
+    .logoN span,
+    .websiteNodig span {
         margin: 10px 20px;
+        text-align: center;
     }
 }
+
 /* Logo? End */
 
 /* Website start */
@@ -354,9 +386,12 @@ a {
     padding: 7px 30px;
     background-color: white;
     border-radius: 4px;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
     font-size: 0.7em;
     transition: 0.5s;
+    margin: 0px auto;
+    display: flex;
     -webkit-appearance: none;
 }
 
@@ -366,14 +401,13 @@ a {
 }
 
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
 
     .button-buy {
         margin-top: 50px;
     }
 
 }
-
 
 /* Input start */
 
@@ -407,7 +441,7 @@ a {
     position: absolute;
     left: 5px;
     font-size: 18px;
-    color: #23387c;
+    color: #000000;
     transition: transform 200ms ease, font-size 200ms ease, color 200ms ease;
     pointer-events: none;
 }
@@ -485,100 +519,122 @@ a {
     }
 
 }
+
 /* Contact End */
 
 /* Diensten Start */
-    .bannershop {
-        height: 40vh;
-        background-image: url(../img/banner1.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-    }
+
+.bannershop {
+    height: 40vh;
+    background-image: url(../img/12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 100px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shop span {
+    color: #000;
+}
+
+.shop svg {
+    width: 250px;
+    align-self: center;
+}
+
+.shop-block {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.margspan {
+    margin-bottom: 33px;
+}
+
+.spanv {
+    margin-bottom: 9px;
+}
+
+.spanc {
+    margin-bottom: 9px;
+}
+
+.shop-item {
+    margin-top: 10px;
+    font-size: 3em;
+}
+
+.shop-prijs {
+    font-size: 2em;
+}
+
+.shop-button {
+    background-color: #329ABF;
+    color: white;
+    width: 150px;
+    align-self: center;
+    border-radius: 10px;
+    padding: 3px 10px;
+    transition: 1s;
+}
+
+.shop-button:hover {
+    color: #329ABF;
+    background-color: white;
+}
+
+.shop-text span {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.head-span {
+    margin-top: 100px;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.lower-span {
+    margin-top: 75px;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 800px) {
 
     .shop {
-        display: flex;
+        align-items: center;
         justify-content: center;
-        justify-content: space-between;
-        margin: 100px 50px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .shop span {
-        color: #000;
-    }
-
-    .shop svg {
-        width: 250px;
-        align-self: center;
-    }
-
-    .shop-block {
-        padding: 50px 0px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 300px;
-        height: 500px;
-        background-color: white;
-        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.10);
-        border-radius: 10px;
-        margin-top: 100px;
-    }
-
-    .margspan {
-        margin-bottom: 33px;
-    }
-
-    .spanv {
-        margin-bottom: 9px;
-    }
-
-    .spanc {
-        margin-bottom: 9px;
-    }
-    .shop-item {
-        margin-top: 10px;
-        font-size: 3em;
-    }
-
-    .shop-prijs {
-        font-size: 2em;
     }
 
     .shop-button {
-        background-color: #329ABF;
-        color: white;
-        width: 150px;
-        align-self: center;
-        border-radius: 10px;
-        padding: 3px 10px;
-        transition: 1s;
+        width: 106px;
+        font-size: 18px;
+        padding: 8px 10px;
     }
 
-    .shop-button:hover {
-        color: #329ABF;
-        background-color: white;
+    .item-info {
+        font-size: 20px;
     }
 
-    .shop-text span {
-        display: flex;
-        flex-direction: column;
-        color: #000;
-    }
+}
 
-    .head-span {
-        margin-top: 100px;
-        font-size: 3em;
-        font-weight: 900;
-    }
-
-    .lower-span {
-        margin-top: 75px;
-        font-size: 2em;
-    }
 /* Diensten End */
 
 /* Project page */
@@ -586,37 +642,38 @@ a {
     width: 100%;
 }
 
-  .pro {
+.pro {
     display: grid;
     color: black;
     grid-template-columns: 1fr 1fr;
     grid-gap: 70px 0px;
-  }
+}
 
-  #projects h2, #projects p {
-      text-align: center;
-  }
+#projects h2,
+#projects p {
+    text-align: center;
+}
 
-  .box img {
+.box img {
     width: 100%;
-  }
+}
 
-  .box h4 {
-      margin: 20px;
-      font-size: 1.5em;
-  }
+.box h4 {
+    margin: 20px;
+    font-size: 1.5em;
+}
 
-  .box {
+.box {
     width: 70%;
     margin: 0 auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     background: #f2f2f28f;
     padding: 1em 1em;
     text-align: center;
-  }
+}
 
-  #projects{
-      padding-bottom: 5em;
-  }
+#projects {
+    padding-bottom: 5em;
+}
+
 /* Project End */
-
