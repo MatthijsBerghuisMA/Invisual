@@ -12,14 +12,10 @@
         <div class="shop-block">
             <span class="shop-item">logo</span>
             <span class="shop-prijs">€89</span>
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 708.66 708.66">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/TR/2018/CR-SVG2-20181004/" viewBox="0 0 708.66 708.66">
                 <defs>
                     <style>
                         .cls-1 {
-                            fill: #48a9ca;
-                        }
-
-                        .cls-2 {
                             fill: #48a9ca;
                         }
                     </style>

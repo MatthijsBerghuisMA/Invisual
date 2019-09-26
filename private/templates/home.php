@@ -4,7 +4,6 @@
     <div class="banner">
         <?= var_dump($file_uri) ?>
         <div class="test"></div>
-        <!-- <img class="test" src="<?= $file_uri ?>img/banner.jpg" alt="banner1"> -->
         <div class="slogan">
             <span class="headsl">Wij visualiseren <br> jouw visie!</span>
             <span class="subslogen">Opzoek naar een passende huisstijl voor jouw bedrijf? <br>
