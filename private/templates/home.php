@@ -48,7 +48,7 @@
             <div class="teamblok">
                 <img class="person" src="<?= $file_uri ?>img/unknown.png" alt="img">
                 <span class="naam">Wiebe Ranzijn</span>
-                <span class="functie">Fulltime Hentai Dokter</span>
+                <span class="functie">Web-developer</span>
                 <a href="http://wieberanzijn.com/" target="_blank" class="button-buy">portoflio</a>
             </div>
             
@@ -69,7 +69,7 @@
             <div class="teamblok">
                 <img class="person" src="<?= $file_uri ?>img/unknown.png" alt="img">
                 <span class="naam">Sam Harwig</span>
-                <span class="functie">Web-Developer</span>
+                <span class="functie">Web-developer</span>
                 <a href="http://samharwig.nl/" target="_blank" class="button-buy">portoflio</a>
             </div>
         </div>
