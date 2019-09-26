@@ -1,9 +1,29 @@
+@font-face {
+    font-family: "Monserrat-light";
+    src: url("../font/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Monserrat-regular";
+    src: url("../font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Monserrat-bold";
+    src: url("../font/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Monserrat-extrabold";
+    src: url("../font/Montserrat-ExtraBold.ttf");
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #23387c;
+    max-width: 100%;
 }
 
 button,
@@ -27,12 +47,21 @@ html {
     html {
         font-size: 20px;
     }
+
+    .pro {
+        width: 900px;
+    }
+
+    .box {
+        /* oof */
+        width: 40%;
+    }
 }
 
 /* Nav Beginning */
 
 nav {
-    padding: 0 125px;
+    padding: 0 175px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -46,7 +75,6 @@ nav {
 
 a {
     text-decoration: none;
-    color: #000;
 }
 
 
@@ -62,9 +90,14 @@ a {
 
 .nav_rechts a {
     font-size: 1em;
+    color: #329ABF;
     padding: 10px 20px;
     font-weight: 200;
     letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: #000;
 }
 
 .nav_links a {
@@ -123,31 +156,17 @@ a {
 
 .nav-link {
     font-size: 30px;
-    color: #121212;
+    color: #329ABF;
     letter-spacing: 3px;
     margin: 8px 0;
     padding: 29px;
     position: relative;
     font-weight: 300;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-decoration: none;
+    transition: 0.8s;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    transform: scale(0, 1);
-    width: 100%;
-    height: 5px;
-    background: #23387c;
-    transition: transform 200ms ease;
-    left: 0;
-    top: 50px;
-}
-
-.nav-link:hover::after {
-    transform: scale(1, 1);
-}
 
 #nav-toggle:checked~.nav-links-container {
     transform: translateX(0);
@@ -163,6 +182,18 @@ a {
 
 #nav-toggle:checked~.nav-toggle-label .nav-toggle-label-span-3 {
     transform: translateY(-15px) rotate(45deg);
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        padding: 0px 130px;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -181,7 +212,7 @@ a {
     }
 
     nav {
-        padding: 0 10px;
+        padding: 0 30px;
         margin-top: 0px;
     }
 
@@ -195,69 +226,211 @@ a {
     }
 }
 
-@media screen and (max-width: 1300px) {
 
-    nav {
-        padding: 0px 50px;
-    }
-
-    .logo {
-        font-size: 2em;
-    }
-}
 /* Nav End */
 
 /* Content Start */
 
 .container {
-    width: 91%;
-    margin: 0px 75px;
-    text-align: center;
+    max-width: 1250px;
+    margin: 0px auto;
 }
 
 .test {
+    width: auto;
+    height: 100vh;
     width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
-.header-head {
-    margin-top: 100px;
-}
-
-.header-head span {
+.slogan {
+    color: white;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    font-family: "Monserrat-extrabold";
 }
 
-.header {
+.headsl {
+    padding-top: 200px;
+    font-size: 80px;
+    color: white;
     font-weight: 900;
-    font-size: 1.5em;
 }
 
-.quotes {
-    font-style: italic;
-    margin-top: 15px;
-    font-weight: 100;
+.subslogen {
+    color: white;
+    font-size: 1.7em;
+    line-height: 50px;
+    padding-top: 100px;
+    font-family: "Monserrat-regular";
 }
 
-.header-text {
-    margin-top: 50px;
-    font-size: 0.7em;
-    font-weight: 100;
-    display: flex;
-    flex-direction: column;
-    line-height: 3;
+@media screen and (max-width: 1300px) {
+
+    .container {
+        max-width: 1000px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
 
     .container {
-        width: 100%;
-        margin: 0px;
+        margin: 0px 30px;
     }
+
+    .slogan {
+        height: 65vh;
+    }
+
+    .test {
+        height: 65vh;
+    }
+
+    .subslogen {
+        font-size: 20px;
+        line-height: 26px;
+        padding-top: 50px;    
+    }
+
+    .headsl {
+        padding-top: 125px;
+        font-size: 35px;
+    }
+
 }
 
 /* Content End */
 
+/* Logo? Start */
+
+.logoN {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.logoN span,
+.websiteNodig span {
+    font-size: 2em;
+    color: black;
+}
+
+.logoN img {
+    width: 80%;
+    margin-bottom: 50px;
+
+}
+
+.button-buy {
+    padding: 7px 30px;
+    background-color: #329ABF;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    width: 200px;
+    font-weight: bolder;
+    font-size: 0.8em;
+    transition: 0.5s;
+    -webkit-appearance: none;
+    border: 1px solid;
+}
+
+.fontb {
+    font-family: "Monserrat-extrabold";
+}
+
+.logoN a,
+.websiteNodig a {
+    align-self: center;
+}
+
+.button-buy:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+
+    .logoN span,
+    .websiteNodig span {
+        margin: 10px 20px;
+        text-align: center;
+    }
+}
+
+/* Logo? End */
+
+/* Website start */
+
+.websiteNodig {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+.websiteNodig img {
+    width: 80%;
+}
+
+/* Website end */
+
+/* Team Start */
+
+.meet {
+    text-align: center;
+    font-size: 2em;
+    margin: 50px auto;
+    font-family: "Monserrat-extrabold";
+}
+.team {
+    margin-top: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.naam {
+    font-family: "Monserrat-bold";
+}
+
+.functie {
+    font-family: "Monserrat-regular";
+}
+.team-blokken {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.person {
+    width: 225px;
+    height: 225px;
+}
+
+.teamblok {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.teamblok * {
+    margin: 5px 0px;
+}
+/* Team End */
 
 /* Contact Start */
 
@@ -277,15 +450,27 @@ a {
     padding: 7px 30px;
     background-color: white;
     border-radius: 4px;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
     font-size: 0.7em;
     transition: 0.5s;
+    margin: 0px auto;
+    display: flex;
     -webkit-appearance: none;
 }
 
 .button:hover {
-    background-color: #23387c;
+    background-color: #329ABF;
     color: white;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .button-buy {
+        margin-top: 50px;
+    }
+
 }
 
 /* Input start */
@@ -320,7 +505,7 @@ a {
     position: absolute;
     left: 5px;
     font-size: 18px;
-    color: #23387c;
+    color: #000000;
     transition: transform 200ms ease, font-size 200ms ease, color 200ms ease;
     pointer-events: none;
 }
@@ -398,5 +583,166 @@ a {
     }
 
 }
+
 /* Contact End */
 
+/* Diensten Start */
+
+.bannershop {
+    height: 40vh;
+    background-image: url(../img/12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 100px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shop span {
+    color: #000;
+}
+
+.shop svg {
+    width: 250px;
+    align-self: center;
+}
+
+.shop-block {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.margspan {
+    margin-bottom: 33px;
+}
+
+.spanv {
+    margin-bottom: 9px;
+}
+
+.spanc {
+    margin-bottom: 9px;
+}
+
+.shop-item {
+    margin-top: 10px;
+    font-size: 3em;
+}
+
+.shop-prijs {
+    font-size: 2em;
+}
+
+.shop-button {
+    background-color: #329ABF;
+    color: white;
+    width: 150px;
+    align-self: center;
+    border-radius: 10px;
+    padding: 3px 10px;
+    transition: 1s;
+}
+
+.shop-button:hover {
+    color: #329ABF;
+    background-color: white;
+}
+
+.shop-text span {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.head-span {
+    margin-top: 100px;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.lower-span {
+    margin-top: 75px;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 800px) {
+
+    .shop {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shop-button {
+        width: 106px;
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+
+    .item-info {
+        font-size: 20px;
+    }
+
+}
+
+/* Diensten End */
+
+/* Project page */
+.projectainer {
+    padding-top: 100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.pro {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000;
+    margin: 0 auto;
+}
+
+#projects h2,
+#projects p {
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box h4 {
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.box {
+/*     width: 70%; */
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 2px #7b7b7b;
+    background: #ffffff;
+    padding: 1em 1em;
+    text-align: center;
+}
+
+#projects {
+    padding-bottom: 5em;
+}
+
+/* Project End */

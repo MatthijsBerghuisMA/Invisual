@@ -1,12 +1,18 @@
 <?php
 
+
+
+$debug = true;
+
+($debug) ? session_start() : error_reporting(0);
+
 // -------------------------------------------------------------------------------
 
 function getUserIpAddr () {
     if(!empty($_SERVER['HTTP_CLIENT_IP'])) {
         // Ip from share internet
         $ip = $_SERVER['HTTP_CLIENT_IP'];
-    } elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+    } elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
         // Ip pass from proxy
         $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
     } else{
@@ -46,18 +52,27 @@ file_put_contents($json_file, json_encode($obj));
 
 // ---------------------------------------------------------------------------------
 
+// $GLOBALS['uri'] = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
+$GLOBALS['file_request'] = 'public/';
+$GLOBALS['nav_request'] = './';
+
 require "../private/includes/router.php";
 
 $router = new router;
 
 $routes = $router->get_routes();
 
-require "../private/controllers/MainController.php";
+// var_dump($routes);
+if ($routes[0] == 'logout') {
+    session_destroy();
+    header("location: ./");
+}
 
-$controller = new MainController;
+$controller = ($debug && isset($_SESSION['debug-ssid']) == 'ebb3b395-c8bf-41a9-bcac-7aed5017f5c8' || !$debug) ?
+    "MainController" : "DebugController";
 
-// $GLOBALS['uri'] = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
-$GLOBALS['file_request'] = 'public/';
-$GLOBALS['nav_request'] = './';
+require "../private/controllers/" . $controller . ".php";
+
+$controller = new $controller;
 
 $controller->load_page($routes);

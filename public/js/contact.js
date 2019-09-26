@@ -1,3 +1,4 @@
+// Made by Matthijs
 let inputs = document.querySelectorAll('.input');
 
 inputs.forEach(input => {

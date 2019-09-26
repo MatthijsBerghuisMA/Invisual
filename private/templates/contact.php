@@ -1,8 +1,8 @@
 <div class="container">
     <div class="contact">
-        <form action="contact.php" method="post">
+        <form action="<?=$nav_uri?>" method="post">
             <div class="input-container">
-                <input type="text" id="naam" name="naam" class="input" required>
+                <input type="text" id="naam" name="name" class="input" required>
                 <label class="input_label" for="naam">Naam *</label>
                 <div class="input_underline"></div>
             </div>
@@ -21,7 +21,7 @@
                 <label for="bericht" class="input_label">Bericht *</label>
                 <div class="input_underline"></div>
             </div>
-            <input type="submit" name="submit" class="button " value="VERSTUUR">
+            <input type="submit" name="contact_submit" class="button mailbutton" value="VERSTUUR">
         </form>
     </div>
 </div>

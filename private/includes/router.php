@@ -15,11 +15,9 @@ class router {
         $basepath = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
 
         // Get the url minus the base url
-        // $uri = substr($_SERVER['REQUEST_URI'], strlen($basepath));
+        $uri = $_SERVER['REQUEST_URI'];
 
-        
-
-        $uri = str_replace("/GitHub/Invisual/", "", $_SERVER['REQUEST_URI']); // Mac localhost
+        // $uri = str_replace("/GitHub/Invisual/", "", $_SERVER['REQUEST_URI']); // Mac localhost
         // $uri = substr($_SERVER['REQUEST_URI'], 10); // Windows localhost
 
         // Remove the '?' from the url
