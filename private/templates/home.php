@@ -18,14 +18,14 @@
         <span class="fontb">LOGO NODIG?</span>
         <span>Wij denken graag <br> met jouw mee</span>
         <img src="<?= $file_uri ?>img/foto.png" alt="test">
-        <a class="button-buy" href="#">DIT WIL IK</a>
+        <a class="button-buy" href="shop">DIT WIL IK</a>
     </div>
 
     <div class="websiteNodig">
         <span class="fontb">Website Nodig?</span>
         <span>Wij zijn er voor jou</span>
         <img src="<?= $file_uri ?>img/10.jpg" alt="test">
-        <a class="button-buy" href="#">DIT WIL IK</a>
+        <a class="button-buy" href="shop">DIT WIL IK</a>
     </div>
 
 

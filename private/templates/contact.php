@@ -21,7 +21,7 @@
                 <label for="bericht" class="input_label">Bericht *</label>
                 <div class="input_underline"></div>
             </div>
-            <input type="submit" name="submit" class="button " value="VERSTUUR">
+            <input type="submit" name="submit" class="button mailbutton" value="VERSTUUR">
         </form>
     </div>
 </div>
