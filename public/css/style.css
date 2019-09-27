@@ -751,11 +751,11 @@ a {
 }
 
 .projectsmall:hover {
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .projectbig:hover {
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .modaal a {
@@ -802,8 +802,9 @@ a {
 }
 
 .modaal img {
-    width: 70%;
-    margin: 20px 0;
+    width: auto;
+    max-height: 500PX;
+
 }
 
 @keyframes opkomen {
@@ -849,4 +850,9 @@ a {
         font-size: 60px;
     }
 }
+
+.imgtest {
+    background-color: #fff;
+}
 /* Project End */
+
