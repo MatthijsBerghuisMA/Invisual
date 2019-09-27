@@ -31,14 +31,14 @@
  
         <div class="team-blokken">
             <div class="teamblok">
-                <img class="person" src="<?= $file_uri ?>img/unknown.png" alt="img">
+                <img class="person" src="<?= $file_uri ?>img/matthijs.jpg" alt="img">
                 <span class="naam">Matthijs Berghuis</span>
                 <span class="functie">Web-developer</span>
                 <a href="https://matthijsberghuis.com" target="_blank" class="button-buy">portoflio</a>
             </div>
 
             <div class="teamblok">
-                <img class="person" src="<?= $file_uri ?>img/unknown.png" alt="img">
+                <img class="person" src="<?= $file_uri ?>img/laura.jpg" alt="img">
                 <span class="naam">Laura Bruin</span>
                 <span class="functie">Vormgever</span>
                 <a href="https://laurabruin.nl/" target="_blank" class="button-buy">portoflio</a>
@@ -52,21 +52,21 @@
             </div>
             
             <div class="teamblok">
-                <img class="person" src="<?= $file_uri ?>img/unknown.png" alt="img">
+                <img class="person" src="<?= $file_uri ?>img/yeno.jpg" alt="img">
                 <span class="naam">Yeno Reus</span>
                 <span class="functie">Web-developer</span>
                 <a href="https://yenoreus.nl/" target="_blank" class="button-buy">portoflio</a>
             </div>
             
             <div class="teamblok">
-                <img class="person" src="<?= $file_uri ?>img/unknown.png" alt="img">
+                <img class="person" src="<?= $file_uri ?>img/richi.jpg" alt="img">
                 <span class="naam">Richi Franken</span>
                 <span class="functie">Vormgever</span>
                 <a href="https://richifranken.nl/" target="_blank" class="button-buy">portoflio</a>
             </div>
             
             <div class="teamblok">
-                <img class="person" src="<?= $file_uri ?>img/unknown.png" alt="img">
+                <img class="person" src="<?= $file_uri ?>img/sam.jpg" alt="img">
                 <span class="naam">Sam Harwig</span>
                 <span class="functie">Web-developer</span>
                 <a href="http://samharwig.nl/" target="_blank" class="button-buy">portoflio</a>
